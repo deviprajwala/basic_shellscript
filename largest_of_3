@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#to find the largest of three numbers supplied as command line argumnets
+
+if [ $# -ne 3 ]
+#to check whether valid number of argumnets is provided or not
+then
+    echo "Enter valid number of argumnets"
+else
+   if [ $1 -gt $2 ] && [ $1 -gt $3 ]
+   #to check whether argument1 is greater than argument2 and argument3 
+   then
+      echo $1 is largest
+   elif [ $2 -gt $3 ] && [ $2 -gt $2 ]
+   #to check whether argument12 is greater than argument1 and argument3 
+   then
+      echo $2 is largest
+   else
+      echo $3 is largest
+
+   fi
+fi 
