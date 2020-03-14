@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#to print numbers by decrementing them
+
+val=$1
+#maximum limit is read from the command line
+
+if [ $# -ne 1 ]
+then
+   echo Enter valid number of arguments
+else
+ while [ $val -gt 0 ]
+ #to check for the condition greater than zero
+ do
+   echo $val
+   #value is printed
+   val=$[ $val - 1 ]
+   #val is decremented by one and assigned to variable val
+ done
+fi
