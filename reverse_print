@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#script to print a number in reverse order
+
+echo "Enter the number to be printed in reverse order"
+read numb
+#read the number to be printed in the reverse order
+
+while [ $numb -ne 0 ]
+#the while loop is repeated until it becomes zero
+
+do
+ x=$[ $numb%10 ]
+ #the number which is obtained as remainder by dividing the number by 10
+
+ echo -n $x
+ #The number assigned to the variable x is printed
+
+ numb=$[ numb/10 ]
+ #the numb variable is reassigned with the variable by dividing it by 10
+
+done
