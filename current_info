@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#script to see current date,time,username and current directory
+
+d=`date`
+echo DATE :$d
+#to echo the current date
+
+echo TIME :$t 
+t=`time`
+#to echo the current time
+
+echo USER :$USER
+#to echo the current user
+
+echo USER ID :$UID
+#to echo the current use id
+
+echo HOME DIRECTORY:$HOME
+#to echo the home directory
+
+p=`pwd`
+echo CURRENT DIRECTORY :$p
+#to echo the present working directory
