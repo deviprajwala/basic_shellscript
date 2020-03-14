@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#to perform basic math operations using case statement
+
+if [ $# -ne 3 ]
+#to check whether the number of arguments is valud or not
+then 
+   echo Enter valid number of arguments
+else
+  case $2 in
+  #if case is + the following commands are executed
+  +) echo addition `expr $1 + $3` 
+  ;;
+ 
+  #if case is - the following commands are executed
+  -) echo subtraction `expr $1 - $3` 
+  ;;
+
+  #if case is x the following commands are executed
+  x) echo multiplication `expr $1 \* $3` 
+  ;;
+
+  #if case is / the following commands are executed
+  /) echo division `expr $1 / $3` 
+  ;;
+  esac
+fi
