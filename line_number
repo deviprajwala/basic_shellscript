@@ -1,0 +1,10 @@
+#!/bin/bash
+#script to read the contents of file from given line number to a given line number
+
+echo Enter starting line number
+read s
+
+echo Enter ending line number
+read e
+
+head -$s myfile.txt | tail -$e
