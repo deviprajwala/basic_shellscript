@@ -3,8 +3,11 @@
 
 echo Enter starting line number
 read s
+#to read the starting line number
 
 echo Enter ending line number
 read e
+#to read the ending line number
 
 head -$s myfile.txt | tail -$e
+#to print contents of myfile.txt from line number 's' to 'e'
