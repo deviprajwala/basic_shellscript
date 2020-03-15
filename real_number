@@ -1,0 +1,28 @@
+#!/bin/bash
+#script to perform mathematical operations involving the real numbers
+
+echo Enter the first real number
+read a
+#to read the first number and assign it to a variable a
+
+echo Enter the second real number
+read b
+#to read the first number and assign it to a variable b
+
+var=$(bc <<< "$a+$b")
+#performing addition with the help of bench calculator
+echo addition: $var
+
+var=$(bc <<< "$a-$b")
+#performing subtraction with the help of bench calculator
+echo subtraction: $var
+
+var=$(bc <<< "$a*$b")
+#performing multiplication with the help of bench calculator
+echo multiplication: $var
+
+var=$(bc <<< "scale=4; $a/$b")
+#performing division with the help of bench calculator
+echo division: $var
+
+
