@@ -1,0 +1,10 @@
+#!/bin/bash
+#script to check whether a file exists or not when its name is given as argument
+
+if [ -e $1 ]
+#-e flag is used to check whether the file exists or not
+then
+   echo File with name $1 exists
+else
+   echo The file doesn\'t exist
+fi
